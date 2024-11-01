@@ -1,0 +1,564 @@
+  /* SOCIAL ICONS */
+.sul-soc-wrapper {
+  display: inline-flex;
+  text-align: center;
+  /*flex-direction: column;*/
+}
+.soc-fixed{
+  flex-direction: column;
+}
+.sul-soc-wrapper a{
+  text-decoration: none;
+  color: #000;
+}
+.soc-inline{
+  display: flex;
+}
+.soc-inline-wrapper{
+  display: flex;
+}
+
+.elementor-grid-item .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.elementor-grid-item .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  color: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.elementor-grid-item .elementor-social-icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* Social Popup */
+.sk-pp-main {
+  position: fixed;
+  margin-top: 2rem;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  animation: scale 0.25s ease;
+  bottom: 1rem;
+}
+.sok-popup-fixed-right .sk-pp-main .miwa{
+    right: 1rem;
+}
+.sok-popup-fixed-left .sk-pp-main .miwa{
+    left: 1rem;
+}
+.miwa {
+  background-color: #1e1e27;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.25rem;
+  border-radius: 8px;
+  position: absolute;
+  max-height: calc(100vh - 100px);
+  bottom: calc(100% + 1rem);
+  overflow: auto;
+  transform-origin: 100% 100%;
+  color: #95a3b9;
+  z-index: 99999999;
+  animation: scale 0.25s ease;
+}
+.magi{
+  text-align: center;
+}
+.miwa::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1e1e27;
+}
+.miwa::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 99em;
+  background-color: #95a3b9;
+  border: 5px solid #1e1e27;
+}
+.miwa pre {
+  white-space: pre-line;
+  border: 1px solid #95a3b9;
+  border-radius: 6px;
+  font-family: monospace;
+  padding: 0.75em;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.miwa[open] div{
+  -webkit-animation: scale 0.25s ease;
+          animation: scale 0.25s ease;
+}
+
+.sk-pp-headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  border-radius: 99em;
+  color: #fff;
+  background-color: #185adb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.sk-pp-headline::-webkit-details-marker {
+  display: none;
+}
+.sk-pp-headline:hover, .sk-pp-headline:focus {
+  background-color: #1348af;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sk-pp-main a:hover{
+  color: white;
+}
+.elementor-social-icon-tiktok {
+    background-color: #000; 
+}
+.elementor-social-icon-facebook-messenger{
+    background-color: #F944BC; 
+}
+.elementor-social-icon-discord {
+  background-color: #6F84D1; 
+}
+.elementor-social-icon-dropbox{
+    background-color: #2E62FF; 
+}
+.elementor-social-icon-behance {
+  background-color: #2C65F7;
+}
+.elementor-social-icon-instagram {
+  background: #DB2B7A;
+}
+
+
+/* Tiktok Embed */
+.tiktok-embed blockquote{
+  border: none;
+}
+
+
+/* Social Icons Toooltips */
+
+.elementor-social-icon-tooltip-android {
+    background-color: #A4C639; }
+  .elementor-social-icon-tooltip-apple {
+    background-color: #999999; }
+  .elementor-social-icon-tooltip-behance {
+    background-color: #1769ff; }
+  .elementor-social-icon-tooltip-bitbucket {
+    background-color: #205081; }
+  .elementor-social-icon-tooltip-codepen {
+    background-color: #000000; }
+  .elementor-social-icon-tooltip-delicious {
+    background-color: #3399ff; }
+  .elementor-social-icon-tooltip-deviantart {
+    background-color: #05cc47; }
+  .elementor-social-icon-tooltip-digg {
+    background-color: #005be2; }
+  .elementor-social-icon-tooltip-dribbble {
+    background-color: #ea4c89; }
+  .elementor-social-icon-tooltip-elementor {
+    background-color: #D30C5C; }
+  .elementor-social-icon-tooltip-envelope {
+    background-color: #ea4335; }
+  .elementor-social-icon-tooltip-facebook, .elementor-social-icon-tooltip-facebook-f {
+    background-color: #3b5998; }
+  .elementor-social-icon-tooltip-flickr {
+    background-color: #0063dc; }
+  .elementor-social-icon-tooltip-foursquare {
+    background-color: #2d5be3; }
+  .elementor-social-icon-tooltip-freecodecamp, .elementor-social-icon-tooltip-free-code-camp {
+    background-color: #006400; }
+  .elementor-social-icon-tooltip-github {
+    background-color: #333333; }
+  .elementor-social-icon-tooltip-gitlab {
+    background-color: #e24329; }
+  .elementor-social-icon-tooltip-globe {
+    background-color: #818a91; }
+  .elementor-social-icon-tooltip-google-plus, .elementor-social-icon-tooltip-google-plus-g {
+    background-color: #dd4b39; }
+  .elementor-social-icon-tooltip-houzz {
+    background-color: #7ac142; }
+  .elementor-social-icon-tooltip-instagram {
+    background-color: #DB2B7A; }
+  .elementor-social-icon-tooltip-jsfiddle {
+    background-color: #487AA2; }
+  .elementor-social-icon-tooltip-link {
+    background-color: #818a91; }
+  .elementor-social-icon-tooltip-linkedin, .elementor-social-icon-tooltip-linkedin-in {
+    background-color: #0077b5; }
+  .elementor-social-icon-tooltip-medium {
+    background-color: #00ab6b; }
+  .elementor-social-icon-tooltip-meetup {
+    background-color: #ec1c40; }
+  .elementor-social-icon-tooltip-mixcloud {
+    background-color: #273a4b; }
+  .elementor-social-icon-tooltip-odnoklassniki {
+    background-color: #F4731C; }
+  .elementor-social-icon-tooltip-pinterest {
+    background-color: #bd081c; }
+  .elementor-social-icon-tooltip-product-hunt {
+    background-color: #da552f; }
+  .elementor-social-icon-tooltip-reddit {
+    background-color: #ff4500; }
+  .elementor-social-icon-tooltip-rss {
+    background-color: #f26522; }
+  .elementor-social-icon-tooltip-shopping-cart {
+    background-color: #4CAF50; }
+  .elementor-social-icon-tooltip-skype {
+    background-color: #00AFF0; }
+  .elementor-social-icon-tooltip-slideshare {
+    background-color: #0077b5; }
+  .elementor-social-icon-tooltip-snapchat {
+    background-color: #fffc00; }
+  .elementor-social-icon-tooltip-soundcloud {
+    background-color: #ff8800; }
+  .elementor-social-icon-tooltip-spotify {
+    background-color: #2ebd59; }
+  .elementor-social-icon-tooltip-stack-overflow {
+    background-color: #fe7a15; }
+  .elementor-social-icon-tooltip-steam {
+    background-color: #00adee; }
+  .elementor-social-icon-tooltip-stumbleupon {
+    background-color: #EB4924; }
+  .elementor-social-icon-tooltip-telegram {
+    background-color: #2CA5E0; }
+  .elementor-social-icon-tooltip-thumb-tack {
+    background-color: #1aa1d8; }
+  .elementor-social-icon-tooltip-tripadvisor {
+    background-color: #589442; }
+  .elementor-social-icon-tooltip-tumblr {
+    background-color: #35465c; }
+  .elementor-social-icon-tooltip-twitch {
+    background-color: #6441A5; }
+  .elementor-social-icon-tooltip-twitter {
+    background-color: #1DA1F2; }
+  .elementor-social-icon-tooltip-viber {
+    background-color: #665cac; }
+  .elementor-social-icon-tooltip-vimeo {
+    background-color: #1ab7ea; }
+  .elementor-social-icon-tooltip-vk {
+    background-color: #45668e; }
+  .elementor-social-icon-tooltip-weibo {
+    background-color: #DD2430; }
+  .elementor-social-icon-tooltip-weixin {
+    background-color: #31A918; }
+  .elementor-social-icon-tooltip-whatsapp {
+    background-color: #25d366; }
+  .elementor-social-icon-tooltip-wordpress {
+    background-color: #21759b; }
+  .elementor-social-icon-tooltip-xing {
+    background-color: #026466; }
+  .elementor-social-icon-tooltip-yelp {
+    background-color: #af0606; }
+  .elementor-social-icon-tooltip-youtube {
+    background-color: #cd201f; }
+  .elementor-social-icon-tooltip-500px {
+    background-color: #0099e5; }
+  .elementor-social-icon-tooltip-facebook-messenge{
+    background-color: #F944BC; 
+  }
+.elementor-social-tooltip-icon-discord{
+  background-color: #6F84D1; 
+}
+.elementor-social-icon-tooltip-dropbox{
+    background-color: #2E62FF; 
+}
+.elementor-social-icon-tooltip-behance{
+  background-color: #2C65F7;
+}
+.elementor-social-icon-tooltip-tiktok {
+    background-color: #000; 
+}
+.elementor-social-icon-tooltip-instagram {
+  background: #DB2B7A;
+}
+
+
+
+/* BEFORE */
+.elementor-social-icon-tooltip-android::before {
+    background-color: #A4C639; }
+  .elementor-social-icon-tooltip-apple::before {
+    background-color: #999999; }
+  .elementor-social-icon-tooltip-behance::before {
+    background-color: #1769ff; }
+  .elementor-social-icon-tooltip-bitbucket::before {
+    background-color: #205081; }
+  .elementor-social-icon-tooltip-codepen::before{
+    background-color: #000000; }
+  .elementor-social-icon-tooltip-delicious::before {
+    background-color: #3399ff; }
+  .elementor-social-icon-tooltip-deviantart::before{
+    background-color: #05cc47; }
+  .elementor-social-icon-tooltip-digg::before{
+    background-color: #005be2; }
+  .elementor-social-icon-tooltip-dribbble::before{
+    background-color: #ea4c89; }
+  .elementor-social-icon-tooltip-elementor::before{
+    background-color: #D30C5C; }
+  .elementor-social-icon-tooltip-envelope::before{
+    background-color: #ea4335; }
+  .elementor-social-icon-tooltip-facebook::before, .elementor-social-icon-tooltip-facebook-f::before{
+    background-color: #3b5998; }
+  .elementor-social-icon-tooltip-flickr::before{
+    background-color: #0063dc; }
+  .elementor-social-icon-tooltip-foursquare::before {
+    background-color: #2d5be3; }
+  .elementor-social-icon-tooltip-freecodecamp, .elementor-social-icon-tooltip-free-code-camp::before{
+    background-color: #006400; }
+  .elementor-social-icon-tooltip-github::before{
+    background-color: #333333; }
+  .elementor-social-icon-tooltip-gitlab::before{
+    background-color: #e24329; }
+  .elementor-social-icon-tooltip-globe::before{
+    background-color: #818a91; }
+  .elementor-social-icon-tooltip-google-plus, .elementor-social-icon-tooltip-google-plus-g::before{
+    background-color: #dd4b39; }
+  .elementor-social-icon-tooltip-houzz::before {
+    background-color: #7ac142; }
+  .elementor-social-icon-tooltip-instagram::before{
+    background-color: #DB2B7A; }
+  .elementor-social-icon-tooltip-jsfiddle::before{
+    background-color: #487AA2; }
+  .elementor-social-icon-tooltip-link::before{
+    background-color: #818a91; }
+  .elementor-social-icon-tooltip-linkedin, .elementor-social-icon-tooltip-linkedin-in::before{
+    background-color: #0077b5; }
+  .elementor-social-icon-tooltip-medium::before{
+    background-color: #00ab6b; }
+  .elementor-social-icon-tooltip-meetup::before{
+    background-color: #ec1c40; }
+  .elementor-social-icon-tooltip-mixcloud::before{
+    background-color: #273a4b; }
+  .elementor-social-icon-tooltip-odnoklassniki::before{
+    background-color: #F4731C; }
+  .elementor-social-icon-tooltip-pinterest::before{
+    background-color: #bd081c; }
+  .elementor-social-icon-tooltip-product-hunt::before{
+    background-color: #da552f; }
+  .elementor-social-icon-tooltip-reddit::before {
+    background-color: #ff4500; }
+  .elementor-social-icon-tooltip-rss::before{
+    background-color: #f26522; }
+  .elementor-social-icon-tooltip-shopping-cart::before{
+    background-color: #4CAF50; }
+  .elementor-social-icon-tooltip-skype::before {
+    background-color: #00AFF0; }
+  .elementor-social-icon-tooltip-slideshare::before{
+    background-color: #0077b5; }
+  .elementor-social-icon-tooltip-snapchat::before{
+    background-color: #fffc00; }
+  .elementor-social-icon-tooltip-soundcloud::before{
+    background-color: #ff8800; }
+  .elementor-social-icon-tooltip-spotify::before{
+    background-color: #2ebd59; }
+  .elementor-social-icon-tooltip-stack-overflow::before{
+    background-color: #fe7a15; }
+  .elementor-social-icon-tooltip-steam::before{
+    background-color: #00adee; }
+  .elementor-social-icon-tooltip-stumbleupon::before{
+    background-color: #EB4924; }
+  .elementor-social-icon-tooltip-telegram::before{
+    background-color: #2CA5E0; }
+  .elementor-social-icon-tooltip-thumb-tack::before{
+    background-color: #1aa1d8; }
+  .elementor-social-icon-tooltip-tripadvisor::before {
+    background-color: #589442; }
+  .elementor-social-icon-tooltip-tumblr::before{
+    background-color: #35465c; }
+  .elementor-social-icon-tooltip-twitch::before{
+    background-color: #6441A5; }
+  .elementor-social-icon-tooltip-twitter::before{
+    background-color: #1DA1F2; }
+  .elementor-social-icon-tooltip-viber::before {
+    background-color: #665cac; }
+  .elementor-social-icon-tooltip-vimeo ::before{
+    background-color: #1ab7ea; }
+  .elementor-social-icon-tooltip-vk::before {
+    background-color: #45668e; }
+  .elementor-social-icon-tooltip-weibo::before {
+    background-color: #DD2430; }
+  .elementor-social-icon-tooltip-weixin::before{
+    background-color: #31A918; }
+  .elementor-social-icon-tooltip-whatsapp::before{
+    background-color: #25d366; }
+  .elementor-social-icon-tooltip-wordpress::before {
+    background-color: #21759b; }
+  .elementor-social-icon-tooltip-xing::before{
+    background-color: #026466; }
+  .elementor-social-icon-tooltip-yelp::before{
+    background-color: #af0606; }
+  .elementor-social-icon-tooltip-youtube::before{
+    background-color: #cd201f; }
+  .elementor-social-icon-tooltip-500px::before{
+    background-color: #0099e5; }
+    .elementor-social-icon-tooltip-tiktok::before {
+    background-color: #000; 
+    }
+.elementor-social-icon-tooltip-facebook-messenger: :before{
+    background-color: #F944BC; 
+}
+.elementor-social-tooltip-icon-discord::before{
+  background-color: #6F84D1; 
+}
+.elementor-social-icon-tooltip-dropbox::before{
+    background-color: #2E62FF; 
+}
+.elementor-social-icon-tooltip-behance::before{
+  background-color: #2C65F7;
+}
+.sk-pp-closebtn{
+  font-size: 0.3cm;
+  cursor: pointer;
+}
+.elementor-social-icon-tooltip-instagram::before {
+  background: #DB2B7A;
+}
+
+
+
+/* CALL NOW BUTON */
+.sok-buton-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sok-buton{
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+}
+.sok-buton-align-fixed .sok-buton {
+  position: fixed;
+  z-index: 9999;
+}
+
+.sok-buton-align-fixed-right .sok-buton {
+  left: auto;
+}
+
+.sok-buton-fixed-left .sok-buton {
+  right: auto;
+}
+/* SOCIAL BAR */
+.social-bar {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999999999999 !important;
+  background: transparent;
+}
+.social-bar-item {
+  padding: 10px 10px 10px 25px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  transition-property: transform, opacity;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.sok-bar-fixed-top .social-bar{
+  top: 10px;
+  left: 42%;
+   -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  flex-direction: row;
+}
+.sok-bar-fixed-bottom .social-bar{
+  bottom: 40px;
+  flex-direction: row;
+    left: 42%;
+   -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.sok-bar-fixed-left .social-bar{
+  left: 0px;
+  top: 300px;
+}
+.sok-bar-fixed-right .social-bar{
+  right: 0px;
+  top: 300px;
+}
+/* CALL NOW BUTON */
+.sok-cl-wrap{
+  display: flex;
+}
+.sok-cl{
+  z-index: 999999999;
+  position: fixed;
+  margin-top: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  transition: 0.25s ease;
+  bottom: 1rem;
+  background: #026938;
+  border-radius: 100px;
+  padding: 23px;
+}
+.sok-cl-btn-right .sok-cl{
+  right: 0;
+}
+.sok-cl-btn-left .sok-cl{
+  left: 0;
+}
+.tiktok-embed iframe{
+background: transparent!important;
+}

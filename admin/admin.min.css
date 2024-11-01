@@ -1,0 +1,206 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --color-salmon: #F32C52;
+  --borderRadius: 36px;
+  --poppins:'Poppins', sans-serif;
+  --oceana: #41B3E5;
+}
+.sk-wrapper{
+    height: 100%;
+}
+
+.sk-admin-header{
+    height: 5cm;
+}
+.sk-credentials{
+    margin-left: 20px;
+}
+.sk-btn1{
+  background: #FF9E01;
+}
+.sk-admin-button, .sk-admin-button a {
+  overflow: hidden;
+  margin: 10px;
+  padding: 12px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+  color: #fff;
+  border: 0 none;
+  border-radius: var(--borderRadius);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+  font-family: 'Poppins', sans-serif;
+  width: 4cm;
+  text-decoration: none;
+}
+.sk-admin-button:hover {
+  transition: all 150ms linear;
+  opacity: 0.85;
+  color: white;
+}
+.sk-admin-button:active {
+  transition: all 150ms linear;
+  opacity: 0.75;
+}
+.sk-admin-button{
+  color: white;
+  background-color: #F32C52;
+}
+.sk-admin-button-pro{
+  color: white;
+  background-color: #0C154C;
+}
+.sk-admin-buttons{
+	display: flex;
+	align-items: center;
+}
+.sk-heading{
+	font-family: 'Poppins', sans-serif;
+	font-size: 4em;
+}
+.sk-p{
+	font-size: 1.4em;
+}.main{
+    flex: 70%;
+}
+.skl{
+  background-color: #41B3E5;
+  color: white;
+}
+.grid-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+
+}
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 3em;
+  }
+
+  .grid-item {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1cm;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+.elite-admin-button{
+  background: #F32C52 ;
+  color: white;
+  padding: 7px;
+  border-radius: 36px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.elite-admin-button:hover{
+  text-decoration: none;
+  color: white;
+}
+.clearfix {
+clear: both;
+}
+
+#contact-cta-section {
+padding-top: 37px;
+padding-bottom: 40px;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+-moz-osx-font-smoothing: grayscale;
+padding: 75px 0 10px 0;
+float: left;
+width: 100%;
+text-align: center; 
+}
+
+.wrapper-full {
+  position: relative;
+width: 1050px;
+margin: 0 auto;
+}
+.cta-wrapper {
+margin-bottom: 0;
+text-align: left;
+padding: 28px;
+background-color: #41B3E5;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+}
+.cta-wrapper .details-wrapper {
+float: left;
+width: 60%;
+}
+.cta-wrapper .details-wrapper h2 {
+font-weight: 600;
+margin: 0 0 4px 0;
+color: #FFF;
+font-size: 27px;
+}
+.cta-wrapper .details-wrapper p {
+  font-size: 18px;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cta-wrapper .blue-cta-button {
+  padding: 17px 50px;
+  text-transform: uppercase;
+  background-color: #41B3E5;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  white-space: pre;
+  margin: 31px 0 25px 0;  
+  float: right;
+  margin: 0;
+  color: #3686BE;
+  background-color: #FFF;
+  padding: 17px 0;
+  width: 40%;
+  text-align: center;
+}
+

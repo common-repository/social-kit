@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.elementor-panel .social-kit-icon:after {
+    content: 'S';
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    background-image: linear-gradient(#91013C,#91013C);
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    border-radius: 15px;
+    margin: 3px;
+}
+.elementor-control-sk-editor-help-btn {
+    height: 80px;
+    padding: 0;
+}
+.elementor-control-sk-editor-help-btn .elementor-control-raw-html {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 10px 20px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.elementor-control-sk-editor-pinterest .elementor-control-raw-html {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 10px 20px 10px;
+    color:  white;
+    background-color: #42B4E5;
+    line-height: 0.4cm;
+}
+.elementor-control-sk-editor-help-btn a {
+   -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 10px 15px;
+    border-radius: 3px;
+    /*box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2);*/
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    text-align: center;
+
+}
+.elementor-control-sk-editor-help-btn a:first-child {
+    color: white;
+    background-color: #F32C52;
+    margin-right: 3px;
+}
+.elementor-control-sk-editor-help-btn a:last-child {
+    margin-left: 3px;
+    color: white;
+    background: #41B3E5;
+}
